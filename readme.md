@@ -36,8 +36,9 @@ A jquery script is used to confirm the deletion of an item.
 COMMENTS USAGE ON THE APPLICATION CODE
 
 During my experience as web developer I have worked in environments with very different opinions about commenting the code. For example the first two experiences here in uk the developers commented code quite a lot, instead in my last company the team standard was to comment very rarely sustaining that it was enough to create very descriptive variables and methods names. 
-I have decided to adopt a middle standard in this application between the two I have worked with in my previous companies, but if you want me to comment more or less I am sure I won’t have any problem to adapt to your commenting standard.
+I have decided to adopt a middle standard on this application between the two I have worked with in my previous companies, but if you want me to comment more or less I am sure I won’t have any problem to adapt to your commenting standard.
 So, please, consider the above while you will judge my comments standard.  
+
 Thanks so much for giving me the opportunity to complete this great exercise :)
 William Armillei
 
