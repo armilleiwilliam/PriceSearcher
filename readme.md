@@ -15,6 +15,9 @@ Once created the database on your PhpMyAdmin and set the connection parameters o
 - php artisan db:seed --class=UsersTableSeeder
 - php artisan db:seed --class=PhotographsTableSeeder
 
+IMPORTANT: IF COPYING AND PASTING THE ENTIRE COMMANDS ABOVE GIVES THE ERROR 'Too many arguments, expected arguments "command"', 
+TRY TO TYPE THEM INSTEAD LETTER BY LETTER. 
+
 In case the above commands won’t work just upload the database dump provided on the repository root of the github account (photographstwo.sql). 
 Then execute:
 
