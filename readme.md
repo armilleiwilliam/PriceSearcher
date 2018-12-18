@@ -1,58 +1,47 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+INTRODUCTION
+Hi, I have decided to use Laravel for this application considering Symfony, the other framework I know, I bit too complex for this small and simple test.
+This framework choice doesn’t arise particular issues, it pretty much suited all that was needed.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+INSTALLATION INSTRUCTIONS
 
-## About Laravel
+With git clone copy the application from my repository on your local, then execute:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Composer install
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Once created the database on your PhpMyAdmin and set the connection parameters on the copied application run the following to populate the database:
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+- php artisan migrate
+- php artisan db:seed –class=UsersTableSeeder
+- php artisan db:seed --class=PhotographsTableSeeder
 
-## Learning Laravel
+In case the above commands won’t work just upload the database dump provided on the repository root of the github account (photographstwo.sql). 
+Then execute:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+- php artisan serve
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Go to 127.0.0.1:8000/login to access the application.
 
-## Laravel Sponsors
+The login is the following:
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+Username: admin@admin.com
+Password: password 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
+On the home page you will notice a menu on top, in order to see the list of the items click on “photographs”, then you will be able to add a new photograph and edit or delete an old one.
+Once created a new photograph a link to edit the new item appears next to a success message, the status “completed” appears on the list of photos and on photo details page. 
+Each form is validated, if someone tries to add a new photo without caption or leaves empty the text field a descriptive error is returned, also if an image is bigger than 1500 KB or smaller than 100x100. Try to trig those errors to see the errors messages please.
+I have added a pagination on the bottom of the list which appears once the number of photographs is higher than 10, try to add a few photographs to see how it looks. 
+A jquery script is used to confirm the deletion of an item.
 
-## Contributing
+COMMENTS USAGE ON THE APPLICATION CODE
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+During my experience as web developer I have worked in environments with very different opinions about commenting the code. For example the first two experiences here in uk the developers commented code quite a lot, instead in my last company the team standard was to comment very rarely sustaining that it was enough to create very descriptive variables and methods names. 
+I have decided to adopt a middle standard in this application between the two I have worked with in my previous companies, but if you want me to comment more or less I am sure I won’t have any problem to adapt to your commenting standard.
+So, please, consider the above while you will judge my comments standard.  
+Thanks so much for giving me the opportunity to complete this great exercise :)
+William Armillei
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
