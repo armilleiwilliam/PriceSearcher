@@ -9,7 +9,7 @@ Git clone or download the copy of the application from my repository on your loc
 
 - Composer install
 
-Once created the database on your PhpMyAdmin and set the connection parameters on the copied application run the following to populate the database:
+Once created the database on your PhpMyAdmin and set the connection parameters on the file “.env” (copied from .env.example) run the following to populate the database:
 
 - php artisan migrate
 - php artisan db:seed --class=UsersTableSeeder
