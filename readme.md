@@ -5,7 +5,7 @@ This framework choice doesn’t arise particular issues, it pretty much suited a
 
 INSTALLATION INSTRUCTIONS
 
-With git clone copy the application from my repository on your local, then execute:
+Git clone or download the copy of the application from my repository on your local, then execute:
 
 - Composer install
 
@@ -23,7 +23,11 @@ Then execute:
 
 - php artisan serve
 
-Go to 127.0.0.1:8000/login to access the application.
+- Go to 127.0.0.1:8000/login to access the application.
+
+(if you get the error 'No application encryption key has been specified.' you should run 'php artisan key:generate' and 
+restart the serve. If the problem persist just close the terminal and reopen it again, if you use the terminal in phpStorm
+you might need to close phpStorm and reopen it)
 
 The login is the following:
 

@@ -30,7 +30,7 @@
                         <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item
-                        @if(request()->is('photoslist') || request()->is('insertphoto'))
+                        @if(request()->is('photographslist') || request()->is('insertphotograph'))
                             active
                         @endif
                     ">
