@@ -1,0 +1,31 @@
+.margin-10 {
+    margin: 10px; !important;
+}
+.margin-15 {
+    margin: 15px;
+}
+input {
+    margin: 2px;
+}
+.card {
+    margin:20px;
+}
+.alert-success {
+    margin-top: 10px;
+}
+.width-20 {
+    width: 20%;
+}
+.image-border {
+    border: 2px solid lightgrey;
+    margin: 3px;
+}
+.login-box-body {
+    margin-top: 20px;
+}
+.form-group > select, input[type="file"], input[type="submit"], .btn-flat {
+    width: 300px;  !important;
+}
+#navbarSupportedContent {
+    border-bottom: 1px solid lightgrey;
+}
