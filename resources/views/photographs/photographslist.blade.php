@@ -39,7 +39,7 @@
                 <td>{{$photograph->text}}</td>
                 <td>
                     @if($photograph->status)
-                        Completed
+                        Done
                     @endif
                 </td>
                 <td>

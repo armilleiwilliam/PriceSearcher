@@ -56,9 +56,9 @@
                             <div class="form-group has-feedback">
                                 Status:
                                 @if($photographDetails->status)
-                                    Completed
+                                    Done
                                 @else
-                                    Not completed
+                                    Not done
                                 @endif
                                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                             </div>
