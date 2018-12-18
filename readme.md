@@ -1,4 +1,5 @@
 INTRODUCTION
+
 Hi, I have decided to use Laravel for this application considering Symfony, the other framework I know, I bit too complex for this small and simple test.
 This framework choice doesn’t arise particular issues, it pretty much suited all that was needed.
 
@@ -6,7 +7,7 @@ INSTALLATION INSTRUCTIONS
 
 With git clone copy the application from my repository on your local, then execute:
 
-Composer install
+- Composer install
 
 Once created the database on your PhpMyAdmin and set the connection parameters on the copied application run the following to populate the database:
 
