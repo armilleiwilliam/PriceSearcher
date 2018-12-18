@@ -31,7 +31,7 @@ class PhotographsController extends Controller
                             ->orderby('id','asc')
                             ->get();
 
-        return View::make('photographs/photographslist', ['photographs' => $photographs, 'pag' => $pag, 'pagination' => $pagination]);
+        return view('photographs/photographslist', ['photographs' => $photographs, 'pag' => $pag, 'pagination' => $pagination]);
     }
 
     public function photographEdit(Request $request)

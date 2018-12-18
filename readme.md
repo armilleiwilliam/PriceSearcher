@@ -12,7 +12,7 @@ With git clone copy the application from my repository on your local, then execu
 Once created the database on your PhpMyAdmin and set the connection parameters on the copied application run the following to populate the database:
 
 - php artisan migrate
-- php artisan db:seed –class=UsersTableSeeder
+- php artisan db:seed --class=UsersTableSeeder
 - php artisan db:seed --class=PhotographsTableSeeder
 
 In case the above commands won’t work just upload the database dump provided on the repository root of the github account (photographstwo.sql). 
